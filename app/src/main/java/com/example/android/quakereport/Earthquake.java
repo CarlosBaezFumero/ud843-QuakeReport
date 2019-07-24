@@ -15,25 +15,24 @@ public class Earthquake {
     /*
      * Resource ID to store the magnitude of the Earthquake
      */
-    private String mDate;
+    private Long mTimeInMiliseconds;
 
-    public Earthquake(String Magnitude, String Location, String Date) {
+    Earthquake(String Magnitude, String Location, Long timeInMiliseconds) {
         mMagnitude = Magnitude;
         mLocation = Location;
-        mDate = Date;
+        mTimeInMiliseconds = timeInMiliseconds;
     }
 
-    public String getMagnitude() {
+    String getMagnitude() {
         return mMagnitude;
     }
 
-    public String getLocation() {
+    String getLocation() {
         return mLocation;
     }
 
-    public String getDate() {
-        return mDate;
+    long getTimeInMiliseconds() {
+        return mTimeInMiliseconds;
     }
-
 
 }
